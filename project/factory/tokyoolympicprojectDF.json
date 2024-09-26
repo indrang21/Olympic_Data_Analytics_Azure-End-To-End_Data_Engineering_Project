@@ -1,0 +1,9 @@
+{
+	"name": "tokyoolympicprojectDF",
+	"location": "norwayeast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "9fa1cb43-a7d9-486b-894f-9a7138604355",
+		"tenantId": "bb96a5b1-b7a6-47ad-92b7-2f59454b56aa"
+	}
+}
