@@ -1,0 +1,12 @@
+{
+	"name": "MedalsHttpServer1",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://raw.githubusercontent.com/indrang21/Olympic_Data_Analytics_Azure-End-To-End_Data_Engineering_Project/refs/heads/main/data/Medals%20-%20Details.csv",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
