@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "tokyoolympic21"
+		},
+		"AthletesDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"tokyoolympic21-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:tokyoolympic21.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"AthletesDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://tokyoolympicproject2121.dfs.core.windows.net/"
+		},
+		"AthletesHttpServer_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/indrang21/Olympic_Data_Analytics_Azure-End-To-End_Data_Engineering_Project/refs/heads/main/data/Athletes%20-%20Details.csv"
+		},
+		"CoachesHttpServersource_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/indrang21/Olympic_Data_Analytics_Azure-End-To-End_Data_Engineering_Project/refs/heads/main/data/Coaches%20-%20Details.csv"
+		},
+		"EntriesGenderHttpServer1_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/indrang21/Olympic_Data_Analytics_Azure-End-To-End_Data_Engineering_Project/refs/heads/main/data/EntriesGender%20-%20Details.csv"
+		},
+		"MedalsHttpServer1_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/indrang21/Olympic_Data_Analytics_Azure-End-To-End_Data_Engineering_Project/refs/heads/main/data/Medals%20-%20Details.csv"
+		},
+		"TeamsHttpServer1_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/indrang21/Olympic_Data_Analytics_Azure-End-To-End_Data_Engineering_Project/refs/heads/main/data/Teams%20-%20Details.csv"
+		},
+		"tokyoolympic21-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://tokyoolympicproject2121.dfs.core.windows.net"
+		}
+	}
+}
