@@ -842,7 +842,7 @@
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
 				"content": {
-					"query": "SELECT TOP (100) [Name]\n,[NOC]\n,[Discipline]\n FROM [tokyoolympic].[dbo].[athletes]\n\n\n --count the number of athletes from each country\n SELECT NOC, Count(*) AS TotalAthletes\n from athletes\n Group By NOC\n ORDER BY TotalAthletes DESC;\n\n --calculate total medals won by each country\n\nSELECT\nTeam_NOC,\nSUM(Gold) Total_Gold,\nSUM(Silver) Total_Silver,\nSUM(Bronze) Total_Bronze,\nFROM medals\nGroup By TEAM_NOC\nORDER BY Total_Gold DESC;",
+					"query": "SELECT TOP (100) [Name]\n,[NOC]\n,[Discipline]\n FROM [tokyoolympic].[dbo].[athletes]\n\n\n --count the number of athletes from each country\n SELECT NOC, Count(*) AS TotalAthletes\n from athletes\n Group By NOC\n ORDER BY TotalAthletes DESC;\n\n --calculate total medals won by each country\n\nSELECT\nTeam_NOC,\nSUM(Gold) Total_Gold,\nSUM(Silver) Total_Silver,\nSUM(Bronze) Total_Bronze\nFROM [tokyoolympic].[dbo].[medals]\nGroup By TEAM_NOC\nORDER BY Total_Gold DESC;\n\n\n--Calculate the average number of entries by gender from each discipline\nSELECT Discipline,\nAVG(Female) Avg_Female,\nAVG(Male) Avg_Male\nFROM entriesgender\nWHERE Discipline = 'Artistic Swimming'\nGROUP BY Discipline;\n\n--Calculate \n",
 					"metadata": {
 						"language": "sql"
 					},
